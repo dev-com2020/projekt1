@@ -12,7 +12,7 @@ export class RaceService {
 
   list(): Observable<Array<RaceModel>>{
     const params = { status: "PENDING"};
-    return this.http.get<Array<RaceModel>>('https://cośtam.com/api/races',{params});
+    return this.http.get<Array<RaceModel>>('https://ponyracer.ninja-squad.com/api/races',{params});
   }
 
 }
