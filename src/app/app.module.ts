@@ -10,6 +10,8 @@ import { FromNowPipe } from './from-now.pipe';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ROUTES } from './app.routes';
+import { RegisterComponent } from './register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { ROUTES } from './app.routes';
     RaceComponent,
     CarComponent,
     FromNowPipe,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
