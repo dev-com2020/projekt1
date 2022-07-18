@@ -1,5 +1,6 @@
 <div>
     <h2>{{ raceModel.name }}</h2>
+    <p>{{ raceModel.startInstant | fromNow }}</p>
     <div class="row">
       <div *ngFor="let car of raceModel.cars" class="col-sm-2">
         <pr-car [carModel]="car"></pr-car>
